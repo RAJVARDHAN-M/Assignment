@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdexcept>
-#include "assessment.cpp"
+#include "Assignments.cpp"
 
 void testInitialPosition()
 {
