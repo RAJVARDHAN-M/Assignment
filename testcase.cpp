@@ -17,7 +17,7 @@ void testInitialPosition()
 }
 
 // Function to test moving the spacecraft forward
-void testMoveForward()
+void testmvfd()
 {
     Spacecraft spacecraft(0, 0, 0, Direction::North); // Create a spacecraft object at (0, 0, 0) facing North
     spacecraft.executeCommands({'f'}); // Execute a 'f' (forward) command
@@ -32,7 +32,7 @@ void testMoveForward()
 }
 
 // Function to test moving the spacecraft backward
-void testMoveBackward()
+void testmvBd()
 {
     Spacecraft spacecraft(0, 0, 0, Direction::North); // Create a spacecraft object at (0, 0, 0) facing North
     spacecraft.executeCommands({'b'}); // Execute a 'b' (backward) command
@@ -47,7 +47,7 @@ void testMoveBackward()
 }
 
 // Function to test turning the spacecraft left
-void testTurnLeft()
+void testTl()
 {
     Spacecraft spacecraft(0, 0, 0, Direction::North); // Create a spacecraft object at (0, 0, 0) facing North
     spacecraft.executeCommands({'l'}); // Execute an 'l' (left) command
@@ -59,7 +59,7 @@ void testTurnLeft()
 }
 
 // Function to test turning the spacecraft right
-void testTurnRight()
+void testTr()
 {
     Spacecraft spacecraft(0, 0, 0, Direction::North); // Create a spacecraft object at (0, 0, 0) facing North
     spacecraft.executeCommands({'r'}); // Execute an 'r' (right) command
@@ -71,7 +71,7 @@ void testTurnRight()
 }
 
 // Function to test turning the spacecraft upward
-void testTurnUp()
+void testTu()
 {
     Spacecraft spacecraft(0, 0, 0, Direction::North); // Create a spacecraft object at (0, 0, 0) facing North
     spacecraft.executeCommands({'u'}); // Execute a 'u' (upward) command
@@ -83,7 +83,7 @@ void testTurnUp()
 }
 
 // Function to test turning the spacecraft downward
-void testTurnDown()
+void testTd()
 {
     Spacecraft spacecraft(0, 0, 0, Direction::North); // Create a spacecraft object at (0, 0, 0) facing North
     spacecraft.executeCommands({'d'}); // Execute a 'd' (downward) command
@@ -98,12 +98,12 @@ int main()
 {
     // Run the individual test functions
     testInitialPosition();
-    testMoveForward();
-    testMoveBackward();
-    testTurnLeft();
-    testTurnRight();
-    testTurnUp();
-    testTurnDown();
+    testmvfd();
+    testmvBd();
+    testTl();
+    testTr();
+    testTu();
+    testTd();
 
     // Additional test cases:
 
