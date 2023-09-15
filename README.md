@@ -34,8 +34,8 @@ To compile and run the project, follow these steps:
    g++ -o SpaceCraft SpaceCraft.cpp
    g++ -o testcase testcase.cpp
 
-
 Usage
+
 You can interactively input spacecraft movement commands when running the Assignments program. Use the following commands:
 
 f: Move forward
@@ -44,6 +44,11 @@ l: Rotate left
 r: Rotate right
 u: Rotate upward
 d: Rotate downward
+q: Quit and exit the program
+
+Testing
+
+The project includes a set of test cases in testcase.cpp to ensure that the Spacecraft class functions correctly. These tests cover various scenarios, including initial position, movement, and rotation. After running the testcase program, you should see output indicating whether the tests passed or failed.
 q: Quit and exit the program
 Testing
 The project includes a set of test cases in testcase.cpp to ensure that the Spacecraft class functions correctly. These tests cover various scenarios, including initial position, movement, and rotation. After running the testcase program, you should see output indicating whether the tests passed or failed.
