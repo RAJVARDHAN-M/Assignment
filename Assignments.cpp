@@ -26,3 +26,26 @@ public:
         currentPosition.zPos = initialZ;
         currentOrientation = initialDirection;
     }
+     // Move forward in the current direction
+    void mvFd() {
+        switch (currentOrientation) {
+            case North:
+                currentPosition.yPos++;
+                break;
+            case South:
+                currentPosition.yPos--;
+                break;
+            case East:
+                currentPosition.xPos++;
+                break;
+            case West:
+                currentPosition.xPos--;
+                break;
+            case Up:
+                currentPosition.zPos++;
+                break;
+            case Down:
+                currentPosition.zPos--;
+                break;
+        }
+    }
